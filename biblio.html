@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca virtual</title>
+    <link rel="stylesheet" href="./CSS/biblio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+
+<body>
+    <br>
+    <h1>
+        <a href="../index.html"><img src="../assets/images/logo2.png"></a>Universidad Mundo Maya</h1>
+    <br><br><br><br>
+
+    <div class="account">
+        <a href="./cuenta.html"><i class="fa fa-user"></i></a>
+    </div>
+
+    <div class="sign-out">
+        <a href="./biblioteca.html">
+            <i class="fa fa-sign-out-alt"></i>
+        </a>
+    </div>
+
+    <div class="buscar">
+        <input type="text" placeholder="Buscar libro" required />
+
+        <div class="btn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="btn-menu">
+            <label class="button" for="btn-menu"><i class="fa fa-bars icon"></i></label>
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#">Ciencias Sociales</a></li>
+                <li><a href="#">Juridico</a></li>
+                <li><a href="#">Humanidades</a></li>
+                <li><a href="#">Literatura</a></li>
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Ciencias</a></li>
+                <li><a href="#">Medicina</a></li>
+            </ul>
+        </div>
+    </div>
+    <h2>Destacados</h2>
+    <ul class="galeria">
+        <li>
+            <a href="#img1"><img src="./assets/images/libros/inge.jpg"></a>
+        </li>
+        <li>
+            <a href="#img2"><img src="./assets/images/libros/medicina.jpg"></a>
+        </li>
+        <li>
+            <a href="#img3"><img src="./assets/images/libros/psicologia.jpg"></a>
+        </li>
+    </ul>
+
+    <div class="modal" id="img1">
+        <h3>introducción a la Ingenieria</h3>
+        <div class="imagen">
+            <a href="#img3"><i class="left fa fa-arrow-left"></i></a>
+            <a href="#img2"><img src="./assets/images/libros/inge.jpg"></a>
+            <a href="#img2"><i class="right fa fa-arrow-right"></i></a>
+        </div>
+        <div>
+            <a class="cerrar" href=""><i class="fa fa-window-close"></i></a>
+        </div>
+    </div>
+    <div class="modal" id="img2">
+        <h3>Convocatoria de practicas profesionales</h3>
+        <div class="imagen">
+            <a href="#img1"><i class="left fa fa-arrow-left"></i></a>
+            <a href="#img3"><img src="./assets/images/libros/medicina.jpg"></a>
+            <a href="#img3"><i class="right fa fa-arrow-right"></i></a>
+        </div>
+        <a class="cerrar" href=""><i class="fa fa-window-close"></i></a>
+    </div>
+    <div class="modal" id="img3">
+        <h3>Convocatoria de servicio social</h3>
+        <div class="imagen">
+            <a href="#img2"><i class="left fa fa-arrow-left"></i></a>
+            <a href="#img1"><img src="./assets/images/libros/psicologia.jpg"></a>
+            <a href="#img1"><i class="right fa fa-arrow-right"></i></a>
+        </div>
+        <a class="cerrar" href=""><i class="fa fa-window-close"></i></a>
+    </div>
+</body>
+
+</html>

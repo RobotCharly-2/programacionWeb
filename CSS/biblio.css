@@ -1,0 +1,284 @@
+body {
+    background-color: #273f67;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+h2 {
+    color: white;
+    padding: 3% 0 0 5%;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    float: left;
+    margin-right: 25px;
+}
+
+.buscar {
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.buscar input {
+    outline: none;
+    box-sizing: border-box;
+    width: 0;
+    height: 35px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #222;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.7s ease;
+}
+
+.btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 55px;
+    height: 55px;
+    background: black;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn i {
+    font-size: 20px;
+    color: white;
+    line-height: 55px;
+    transition: all .7s ease;
+}
+
+.buscar:hover input {
+    width: 350px;
+}
+
+.buscar input:focus {
+    width: 350px;
+}
+
+.sign-out {
+    position: absolute;
+    right: 8%;
+    top: 10%;
+    width: 55px;
+    height: 55px;
+    background: black;
+    line-height: 50px;
+    border-radius: 20%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sign-out i {
+    font-size: 40px;
+    color: white;
+    line-height: 55px;
+}
+
+.account {
+    position: absolute;
+    right: 16%;
+    top: 10%;
+    width: 55px;
+    height: 55px;
+    background: black;
+    line-height: 50px;
+    border-radius: 20%;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.account i {
+    font-size: 40px;
+    color: white;
+    line-height: 55px;
+}
+
+.menu {
+    position: absolute;
+    left: 5%;
+}
+
+.btn-menu {
+    font-family: 'Lato', sans-serif;
+    transition: .6s all;
+    z-index: 1;
+    color: white;
+    font-size: 30px
+}
+
+.btn-menu ul {
+    padding: 0px;
+    text-align: center;
+}
+
+.btn-menu li {
+    transition: all .3s;
+    list-style: none;
+    height: 70px;
+}
+
+.btn-menu a {
+    text-decoration: none;
+    font-weight: normal;
+    transition: .3s all;
+    font-size: 0;
+    padding: 0;
+}
+
+.btn-menu h2 {
+    color: white;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.btn-menu:hover a {
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 20px;
+    height: 70px;
+}
+
+.btn-menu:hover li {
+    border-top: 1px solid #ffffff;
+    width: 100%;
+}
+
+.btn-menu:hover ul:last-of-type {
+    border-bottom: 1px solid #ffffff;
+}
+
+.btn-menu:hover a:hover {
+    font-size: 25px;
+    padding: 30px 0px;
+    background: rgba(23, 78, 112, 0.98);
+    height: 10px;
+}
+
+@media (min-width: 800px) {
+    .btn-menu:hover {
+        width: 100%;
+    }
+}
+
+.galeria {
+    width: 60%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #273f67;
+}
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 165px;
+    height: 180px;
+}
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background: #273f67;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 140vh;
+}
+
+.modal h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0%;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid white;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 45px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+.left:hover {
+    background-color: white;
+    color: #273f67;
+    border-radius: 50%;
+}
+
+.right:hover {
+    background-color: white;
+    color: #273f67;
+    border-radius: 20px;
+}
+
+.cerrar:hover {
+    background-color: white;
+    color: #273f67;
+    border-radius: 50%;
+}

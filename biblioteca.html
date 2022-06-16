@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="CSS/biblioteca.css">
+</head>
+
+<body>
+    <br>
+    <h1>
+        <a href="../index.html"><img src="../assets/images/logo2.png"></a>Universidad Mundo Maya</h1>
+    <br><br><br><br>
+    <ul class="nav">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="#">Campus</a>
+            <ul>
+                <li><a href="../paginas/villahermosa.html">Villahermosa</a></li>
+                <li><a href="../paginas/camp.html">Campeche</a></li>
+                <li><a href="../paginas/carde.html">Cárdenas</a></li>
+                <li><a href="../paginas/cdc.html">Ciudad del Carmen</a></li>
+                <li><a href="../paginas/oaxa.html">Oaxaca</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Licenciaturas</a>
+            <ul>
+                <li><a href="../licen/enfe.html">Enfermería</a></li>
+                <li><a href="../licen/odon.html">Odontología</a></li>
+                <li><a href="../licen/psi.html">Psicología</a></li>
+                <li><a href="../licen/ver.html">Ver más...</a></li>
+            </ul>
+        </li>
+        <li><a href="./biblioteca.html">Biblioteca Virtual</a></li>
+        <li><a href="../quien.html">¿Quienes somos?</a></li>
+        <li><a href="../conta.html">Contactanos</a></li>
+    </ul>
+    <br><br><br>
+    <h1 class="encabezado">Inicia sesión para acceder a la biblioteca virtual</h1>
+    <br><br><br>
+    <div class="login-box">
+        <img src="./assets/images/logoLogin.png" class="avatar" alt="Avatar Image">
+        <h1>Inicia sesión</h1>
+        <form action="login.js" method="post" class="form-login">
+            <!-- USERNAME INPUT -->
+            <label for="username">Username</label>
+            <input id="matricula" type="text" placeholder="Ingresa tu matricula" autocomplete="off" required>
+            <!-- PASSWORD INPUT -->
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" required>
+            <input class="btn-inicio" type="button" value="Iniciar Sesión" id="boton" onclick="login()">
+            <a href="#" class="lose-pass">¿Olvidaste tu contraseña?</a><br>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Universidad Mundo Maya</h3>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 Universidad Mundo Maya. designed by <span>Montiel</span></p>
+        </div>
+    </footer>
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
